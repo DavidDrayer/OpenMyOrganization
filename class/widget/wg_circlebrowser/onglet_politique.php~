@@ -1,0 +1,37 @@
+<?
+	$politique=$this->_circle->getPolicy(); 
+	echo "<div class='grey_design'>";
+	foreach($politique as $entry) {
+		echo "<div style='padding:5px; font-weight:bold;' class='ui-state-default ui-state-active ui-corner-top '>";
+		echo $entry->getTitle();
+		echo "</div>";
+		echo "<div style='padding:15px; margin-bottom:6px;' class=' ui-helper-reset ui-widget-content ui-corner-bottom '>";
+		echo $entry->getDescription();
+		echo "</div>";
+	}
+	
+	// Affiche également les politiques associées aux liens transverses 
+	$liste=$this->_circle->getLinks();
+	if (count($liste)>0) {
+		foreach($liste as $entry) {
+			echo "<div style='padding:5px; font-weight:bold;' class='ui-state-default ui-state-active ui-corner-top '>";
+			echo "Politique de lien transverse, rôle [".($entry->getSourceId()>0?$entry->getSource()->getName():"<span class='omo-warning' title='L&#39;affectation du rôle doit se faire en gouvernance.'>Rôle indéfini</span>")."] vers [".@$entry->getSuperCircle()->getName()."]";
+			echo "</div>";
+			echo "<div style='padding:15px; margin-bottom:6px;' class=' ui-helper-reset ui-widget-content ui-corner-bottom '>";
+			if ($this->_circle->getId()==$entry->getMasterId()) {
+				echo "Par autorité de ce cercle, le rôle [".($entry->getSourceId()>0?$entry->getSource()->getName():"<span class='omo-warning' title='L&#39;affectation du rôle doit se faire en gouvernance.'>Rôle indéfini</span>")."] est représenté dans le cercle [".@$entry->getSuperCircle()->getName()."], sous forme de lien transverse. Il y porte sa raison d'être, ses redevabilités et ses domaines.";
+			} else
+			if ($this->_circle->getId()==$entry->getSourceCircleId()) {
+				echo "Par autorité du cercle [".$entry->getMaster()->getName()."], le rôle [".($entry->getSourceId()>0?$entry->getSource()->getName():"<span class='omo-warning' title='L&#39;affectation du rôle doit se faire en gouvernance.'>Rôle indéfini</span>")."] est représenté dans le cercle [".@$entry->getSuperCircle()->getName()."], sous forme de lien transverse. Il y porte sa raison d'être, ses redevabilités et ses domaines.";
+			} else
+			if ($this->_circle->getId()==$entry->getSuperCircleId()) {
+				echo "Par autorité du cercle [".$entry->getMaster()->getName()."], le rôle [".($entry->getSourceId()>0?$entry->getSource()->getName():"<span class='omo-warning' title='L&#39;affectation du rôle doit se faire en gouvernance.'>Rôle indéfini</span>")."] est représenté dans ce cercle, sous forme de lien transverse. Il y porte sa raison d'être, ses redevabilités et ses domaines.";
+			}
+			echo "</div>";
+			
+		}
+	}
+	
+	echo "</div>";
+
+?>

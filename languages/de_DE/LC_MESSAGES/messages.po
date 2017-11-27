@@ -1,0 +1,488 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OMO allemand\n"
+"POT-Creation-Date: 2014-07-29 19:25+0100\n"
+"PO-Revision-Date: 2014-07-30 14:29+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-KeywordsList: T_\n"
+"X-Poedit-SearchPath-0: D:\\Dropbox\\Ennoïa\\Logiciel O.M.O\\Developpement"
+"\\code dev\n"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:92
+msgid "R&eacute;sultat attendu"
+msgstr "Erwartete Ergebnis"
+
+# t
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:96
+msgid "Informations compl&eacute;mentaires"
+msgstr "Erganzende Informationen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:100
+msgid "Notes"
+msgstr "Noten"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:106
+msgid "Créé par "
+msgstr "Erstellt von "
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:108
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:113
+msgid " le "
+msgstr " der "
+
+# t
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:111
+msgid ", Modifié par "
+msgstr ", gendert von "
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:126
+msgid "Ajouter une note:"
+msgstr "eine Note hinzufugen:"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:129
+msgid "Visibilit&eacute;:"
+msgstr "Sichtbarkeit"
+
+# t
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:130
+msgid "Public"
+msgstr "Offentlich"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:131
+msgid "Organisation"
+msgstr "Organisation"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:132
+msgid "Cercle"
+msgstr "Kreis"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:133
+msgid "R&ocirc;le"
+msgstr "Rolle"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:134
+msgid "Priv&eacute;"
+msgstr "Privat"
+
+# t
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:137
+msgid "Ajouter une note..."
+msgstr "eine Note hinzufugen..."
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:216
+msgid "R&eacute;sultat attendu: "
+msgstr "Erwartete Ergebnis: "
+
+# r
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:217
+msgid "Informations compl&eacute;mentaires: "
+msgstr "Erganzende Informationen"
+
+# a
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:224
+msgid "Personne en charge:"
+msgstr "Zustandige Person:"
+
+# a
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:225
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/ajax/project.php:246
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:94
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:121
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:92
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:114
+msgid "Choisissez..."
+msgstr "Wahlen Sie..."
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:42
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:114
+msgid " 1er lien : "
+msgstr "Lead Link : "
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:48
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:120
+msgid " - 2nd lien : "
+msgstr " - Rep Link :"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:54
+msgid "Non affect&eacute;"
+msgstr "Nicht vergebend"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:60
+msgid " Energ&eacute;tis&eacute; par : "
+msgstr " Energetisiert von : "
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:67
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:140
+msgid " et <u>"
+msgstr " und <u>"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:67
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:140
+msgid " autres personnes</u>"
+msgstr " andere Personen</u>"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:72
+msgid " Non affect&eacute; "
+msgstr " Nicht vergebend "
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:77
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:152
+msgid "Assigner le r&ocirc;le "
+msgstr "Eine Rolle zuweisen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:84
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:294
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:30
+msgid "Raison d'&ecirc;tre"
+msgstr "Bestimmung"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:90
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:300
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:309
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:36
+msgid "Strat&eacute;gie"
+msgstr "Strategie"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:95
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:315
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:41
+msgid "Domaines"
+msgstr "Geltungsbereich"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:106
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:327
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:52
+msgid "Redevabilit&eacute;s"
+msgstr "Verantwortungen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:120
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:67
+msgid "Energ&eacute;tis&eacute; par"
+msgstr "Energetisert von"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:125
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:72
+msgid "Profil de "
+msgstr "Profil von "
+
+# r
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:130
+msgid " pour "
+msgstr " fur "
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:146
+msgid "Afficher le d&eacute;tail du cercle"
+msgstr "Die Einzelheit vom Kreis anzeigen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:149
+msgid "Afficher le d&eacute;tail du r&ocirc;le"
+msgstr "Die Einzelheit der Rolle anzeigen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:277
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:130
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:123
+msgid "Description"
+msgstr "Beschreibung"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:278
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_ORG~1.PHP:109
+msgid "Membres"
+msgstr "Mitglieder"
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:282
+msgid "Ajouter un membre dans le cercle"
+msgstr "Kreismitglied hinzufugen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:301
+msgid "Editer la strat&eacute;gie"
+msgstr "Die Strategie editieren"
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:309
+msgid "Ajouter une strat&eacute;gie"
+msgstr "Eine Strategie hinzufugen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:343
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:385
+msgid "R&ocirc;les"
+msgstr "Rollen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:344
+msgid "Politiques"
+msgstr "Politiken"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:345
+msgid "Historique"
+msgstr "Archiv"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:346
+msgid "Check-lists"
+msgstr "Checkliste"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:347
+msgid "Indicateurs"
+msgstr "Indikatoren"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:348
+msgid "Projets"
+msgstr "Projekte"
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:354
+msgid "Ajouter une check-list"
+msgstr "Eine Checkliste hinzufugen"
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:358
+msgid "Ajouter un indicateur"
+msgstr "Ein Indikator hinzufugen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:359
+msgid "Editer la gouvernance"
+msgstr "Die Gouvernanz editieren"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:359
+msgid "D&eacute;marrer une r&eacute;union de gouvernance"
+msgstr "Eine Gouvernanzsitzung beginnen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:367
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:97
+msgid "R&ocirc;les structurels"
+msgstr "Strukturelle Rollen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1.PHP:376
+msgid "Sous-Cercles"
+msgstr "Unterkreise"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~4.PHP:26
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~2.PHP:23
+msgid "Tous les membres"
+msgstr "Alle Mitglieder"
+
+# o
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~4.PHP:45
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~2.PHP:40
+msgid "Supprimer"
+msgstr "Loschen"
+
+# o
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~4.PHP:45
+msgid "Etes-vous s&ucirc;r de vouloir supprimer cette check-list?"
+msgstr "Sind Sie sicher, diese Checkliste loschen zu wollen?"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~4.PHP:46
+msgid "Editer une check-list"
+msgstr "Eine Checkliste editieren"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~4.PHP:54
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~2.PHP:48
+msgid "<i>Aucune entrée</i>"
+msgstr "<i>Keine Eingabe</i>"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ON1CEC~1.PHP:31
+msgid "lien"
+msgstr "Link"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~2.PHP:19
+msgid "Premier lien"
+msgstr "Lead Link"
+
+# o
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~2.PHP:40
+msgid "Etes-vous s&ucirc;r de vouloir supprimer cet indicateur?"
+msgstr "Sind Sie sicher, dieser Indikator loschen zu wollen?"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~2.PHP:41
+msgid "Editer un indicateur"
+msgstr "Ein Indikator editieren"
+
+# o
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:41
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:58
+msgid "Ajouter un projet"
+msgstr "Ein Projekt hinzufogen"
+
+# o
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:41
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:58
+msgid "[+] Ajouter un projet"
+msgstr "[+] Ein Projekt hinzufogen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:46
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:63
+msgid "Proposer un projet"
+msgstr "Ein Projekt vorschlagen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:46
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:63
+msgid "[+] Proposer un projet"
+msgstr "[+] Ein Projekt vorschlagen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:51
+msgid "Aucun projet..."
+msgstr "Kein Projekt..."
+
+# a
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:99
+msgid "Modifier un projet"
+msgstr "Ein Projekt andern"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:99
+msgid "Editer"
+msgstr "Editieren"
+
+# o
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:99
+msgid "Voulez-vous effacer le projet"
+msgstr "Wollen Sie dieser Projekt loschen"
+
+# o
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/ONGLET~1.PHP:99
+msgid "Supprimer..."
+msgstr "Loschen..."
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:93
+msgid "Afficher le détail du cercle"
+msgstr "Die Einzelheit vom Kreis anzeigen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:96
+msgid "Afficher le détail du r&ocirc;le"
+msgstr "Die Einzelheit der Rolle anzeigen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:126
+msgid "Non affecté"
+msgstr "Nicht vergebend"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:133
+msgid " Energétisé par : "
+msgstr " Energetisiert von : "
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_CIR~1/refresh.php:145
+msgid " Non affecté "
+msgstr " Nicht vergebend"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_ORG~1.PHP:73
+msgid "Liste des organisations"
+msgstr "Liste der Organisationen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_ORG~1.PHP:104
+msgid "Cercles"
+msgstr "Kreise"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_ORG~1.PHP:115
+msgid "Agenda"
+msgstr "Agenda"
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WG_ORG~1.PHP:116
+msgid "Liste des prochaines r&eacute;unions (Triage et gouvernance)"
+msgstr ""
+"Liste der zukunftigen Sitzungen (Opertives Sitzungen und Gouvernanz "
+"Sitzungen)"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:60
+msgid "Lancer la recherche"
+msgstr "Suche starten"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:60
+msgid "Rechercher"
+msgstr "Suchen"
+
+# o
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:63
+msgid "Ouvrir la recherche avanc&eacute;e"
+msgstr "Die erweitere Suche offnen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:63
+msgid "Recherche avanc&eacute;e"
+msgstr "Erweiterte Suche"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:71
+msgid "Mes tensions dans le cercle "
+msgstr "Meine Spannungen im Kreis"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:71
+msgid "Mes tensions dans ce cercle !"
+msgstr "Meine Spannungen im Kreis!"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:77
+msgid "Un bug ? Une suggestion ? Merci de nous les partager !"
+msgstr "Ein Bug ? Eine Anregung ? Danke, dass Sie es uns miteilen!"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:81
+msgid "Aide"
+msgstr "Hilfe"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:93
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:97
+msgid "Mon profil"
+msgstr "Mein Profil"
+
+# a
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:100
+msgid "Modifier mon profil"
+msgstr "Mein Profil andern"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/class/widget/WIDGET~1.PHP:101
+msgid "Me d&eacute;connecter"
+msgstr "Ausloggen"
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:40
+msgid "La Checkliste a &eacute;t&eacute; ajout&eacute;e"
+msgstr "Die Checkliste ist hinzugefugt worden"
+
+# a
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:92
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:90
+msgid "Choisissez le r&ocirc;le concern&eacute;"
+msgstr "Wahlen Sie die entsprechende Rolle"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:95
+msgid "Tous les r&ocirc;les"
+msgstr "Alle Rollen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:106
+msgid "R&ocirc;les op&eacute;rationnels"
+msgstr "Operationnelle Rollen"
+
+# a
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:119
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:112
+msgid "Choisissez la r&eacute;currence"
+msgstr "Wahlen Sie die Wiederholung"
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:153
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:147
+msgid "Ajouter"
+msgstr "Hinzufugen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_C~1.PHP:153
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:147
+msgid "Annuler"
+msgstr "Canceln"
+
+# u
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:36
+msgid "L'indicateur a &eacute;t&eacute; ajout&eacute;e"
+msgstr "Der Indikator ist hinzugefugt worden"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:93
+msgid "R&ocirc;le structurels"
+msgstr "Strukturelle Rollen"
+
+#: D:/Dropbox/ENNOA~1/LOGICI~1.O/DEVELO~1/CODEDE~1/FORMUL~1/FORM_M~2.PHP:100
+msgid "R&ocirc;le op&eacute;rationnels"
+msgstr "Operationnelle Rollen"

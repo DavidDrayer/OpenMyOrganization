@@ -1,0 +1,5 @@
+	@import url("../common/std.css");
+	
+	/* Document global */
+	body {padding:75px 5px 5px 5px;  background:url('images/iceberg2.jpg') #f4f9fe repeat right top;  background-size:cover;}
+	body.login_page {padding:0px 0px 0px 0px; background:url('images/iceberg.jpg') #f4f9fe fixed right top;background-size:cover;}

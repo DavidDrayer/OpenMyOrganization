@@ -1,0 +1,63 @@
+	/* Style des divisions, incluant une image "+", "-" ou "." */
+	.treeEntry, .treeEntryMore, .treeEntryLess {
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: left top;
+		padding-left:15px;
+		margin-top:2px
+	}
+	/* Style pour les liens intégrés dans les noeuds */
+	/* Lien normal */
+	.treeView a { 
+		border:1px solid white;
+		padding-left:2px;
+		margin-left:-2px;
+		padding-right:2px;
+		text-decoration : none;
+		color:#1B5Fa4;
+	}
+	/* Lien sur lequel est le curseur de la souris */
+	.treeView a:hover {
+		border:1px solid #ABCEF2;
+		background : #D0E3F7;
+	}
+	/* Dernier lien cliqué */
+	.treeView a.activeLink, .treeView a.activeLink:hover  {
+		border:1px solid #2B7FD4;
+		background : #ABCEF2;
+	}
+	/* ATTENTION, n'oubliez pas de créer les images !!! */
+	/* Style par défaut, lorsqu'il n'y a pas d'enfants ou que l'on ne sait pas */
+	.treeEntry {
+		background-image: url(../images/icons/treeEnd.GIF);
+	}
+	/* Affichage du "+" lorsqu'il y a plus à voir */
+	.treeEntryMore {
+		background-image: url(../images/icons/treeMore.GIF);
+	}
+	/* Affichage du "-" pour cacher une section */
+	.treeEntryLess {
+		background-image: url(../images/icons/treeLess.GIF);
+	}
+	/* Contenu affiché d'un sous-arbre */
+	.treeContentVisible { 
+	}
+	/* Contenu caché d'un sous-arbre */
+	.treeContent, .treeLoading {
+		display:none; 
+	}
+
+	/* Feuille de style spéciale pour le troisième exemple*/
+	#myThirdTree img {
+		vertical-align : middle;
+	}
+	 #myThirdTree .treeEntryMore, #myThirdTree .treeEntryLess {
+		cursor:hand;
+	}
+	 #myThirdTree .treeEntry {
+		cursor:text;
+	}
+	#myThirdTree {
+		font-family:arial;
+		font-size:12px;
+	}

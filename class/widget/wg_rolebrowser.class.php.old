@@ -1,0 +1,117 @@
+<?php
+	namespace widget;
+	
+// Cette classe affiche un browser HTML permettant de parcourir un objet de type "role" dans son
+// intégralité : redevabilites, perimetres, raison d'etre, etc...
+class wg_roleBrowser extends Widget
+{
+	// l'élément role à afficher
+	private $_role;
+	
+	// Constructeur nécessitant le role à afficher
+	// Entrée : le role à afficher
+	// Sortie : un objet de type wg_circleBrowser
+	public function __construct(\holacracy\Role $role) 
+	{
+		$this->_role=$role;
+	}
+	
+	public function display() {
+	
+	?>
+	<style>
+	ul {margin:0px; }
+	H1{display:inline;}
+	.filled {float:right; background: #EEE; margin-top: 5px; padding: 5px;}
+</style>
+<script>
+	$(document).ready(function(){
+		function resizeUi() {
+		    var h = $(window).height();
+		    var w = $(window).width();
+		    $(".omo-main-table").css('height', h-10 );
+		};
+		var resizeTimer = null;
+		$(window).bind('resize', function() {
+		    if (resizeTimer) clearTimeout(resizeTimer);
+		    resizeTimer = setTimeout(resizeUi, 100);
+		});
+		resizeUi();
+		
+		// Une fois tout modifié, cache l'écran de chargement
+		$("#main_waiting_screen").css("display","none");
+	});
+</script>
+<?php
+	echo "<div id='main_waiting_screen'>".\widget\Widget::FULL_WAITING_SCREEN."</div>";
+	if (!$this->_role->isActive ()) echo "<div id='object_deleted_screen'>".\widget\Widget::OBJECT_DELETED_SCREEN."</div>";
+
+	echo "<div id='roleBrowser' class='main'>";
+	$this->_displayNav($this->_role);
+	echo "<table class='omo-main-table'>";
+		
+	echo "<tr><td style='width:66%; vertical-align:top' class='omo-box ui-corner-all'>"; 
+		
+	if ($this->_role->getPurpose()!="") { 
+	?>
+	<fieldset><legend><div id="mask1"></div><span class='omo-purpose'>Raison d'être</span><div id="mask2"></div></legend>
+	<div class="content" id="content_4"><?php echo $this->_role->getPurpose(); ?></div></fieldset><?php }
+	
+	if (count($this->_role->getScopes())>0) { ?>
+	<fieldset><legend><div id='mask1'></div><span class='omo-scope'>Domaines</span><div id='mask2'></div></legend>
+	<div class="content" id="content_2"><ul>
+	<?php 
+	
+		foreach ($this->_role->getScopes() as $scope) {
+					echo "<li".($scope->getRoleId()!=$this->_role->getId()?" style='font-style: italic;'":"").">".$scope->getDescription()."</li>";
+			}
+	?> 	</ul></div></fieldset> <?php } 
+	
+	if (count($this->_role->getAccountabilities())>0) { 
+	?>
+	<fieldset><legend><div id='mask1'></div><span class='omo-redevability'>Redevabilités</span><div id='mask2'></div></legend>
+	<div class="content"  id="content_3"><ul>
+	<?php 
+	foreach ($this->_role->getAccountabilities() as $accountability) {
+					echo "<li".($accountability->getRoleId()!=$this->_role->getId()?" style='font-style: italic;'":"").">".$accountability->getDescription()."</li>";
+				} ?>
+	</ul></div></fieldset><?php } ?>
+	</td><td class='omo-box ui-corner-all'>
+<?	
+			// Affiche le détail des rôles fillers avec l'intégralité du nom, ainsi que les focus
+			$roleFillers=$this->_role->getRoleFillers();
+			
+			// Affiche le détail des rôles fillers avec l'intégralité du nom, ainsi que les focus
+			if (count($roleFillers)>0) {
+				echo "<fieldset class='light'><legend><div id='mask1'></div><span class='omo-user'>Energétisé par</span><div id='mask2'></div></legend>";
+				for ($i=0;$i<count($roleFillers); $i++){
+					//echo "<table><tr>";
+					echo "<div class='omo-user-block ui-corner-all'>";
+					if (checkMini("/images/user/".$roleFillers[$i]->getUserId().".jpg",30,30,"mini",1,5)) {
+						echo "<a href='/user.php?id=".$roleFillers[$i]->getUserId()."' class='dialogPage' alt='Profil de ".$roleFillers[$i]->getFirstName()." ".$roleFillers[$i]->getLastName()."'><img class='omo-user-img' src='/images/user/mini/".$roleFillers[$i]->getUserId().".jpg'/></a>";
+					}
+					// Affiche quelques infos et le menu USER			
+					echo "<b>".$roleFillers[$i]->getFirstName()." ".$roleFillers[$i]->getLastName()."</b><br>";
+					if (count($roleFillers)>1) { 
+						echo " pour ";
+						if ($roleFillers[$i]->getFocus()!="") {
+							echo $roleFillers[$i]->getFocus();
+						} else {
+							echo "-";
+						}
+					}
+					echo "</div>";
+				//	echo "</td></tr></table>";
+					
+				}
+				echo "</fieldset>";
+			}
+?>	
+	</td></tr></table></div> 
+	<?php
+	}
+	
+
+}
+
+?>

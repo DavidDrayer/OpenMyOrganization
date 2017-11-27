@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /content.php
+Disallow: /content.php?
+

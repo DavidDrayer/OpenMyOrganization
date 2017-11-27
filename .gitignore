@@ -1,0 +1,8 @@
+site_config.php
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+

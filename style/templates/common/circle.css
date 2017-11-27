@@ -1,0 +1,201 @@
+@import url("omo.css");
+	body {overflow:hidden}
+	/* Couleur d'une colonne projet lorsque hover du draggable */
+	.project-border {background-color: #EEEEEE}
+		
+	/* Mise en page des colonnes de projet */
+	td.project, td.project_title {width:23.25%;} 
+
+
+	/* Mise en page général d'un projet */
+	div.project_title {padding:10px; text-align:center;font-size:12px;}
+	div.project {
+	        max-width:190px;
+	}
+	div.arrondi {	
+		margin:4px;
+		margin-bottom:5px;
+		border-style:solid; 
+		border-width:1px;
+          -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        background:#FFFFFF;
+	}
+	div.action-list {
+		border:0px;
+	}
+	.more_projects {}
+	.project_nb_actions {display:block; background:#DDDDDD; width:30px; margin-left: auto ; margin-right: auto ;border-radius:4px;padding:2px;}
+	.project_nb_actions_red {display:block; background:#FFAAAA;width:30px; margin-left: auto ; margin-right: auto ;border-radius:4px;padding:2px;}
+	
+	/* Pour les documents */
+	.role_document {
+		border-radius: 4px;
+		display:block;
+		border:1px solid black;
+		padding:2px;
+		position:relative;
+		background: left center no-repeat rgba(255,255,255,0.5);
+		padding:5px;
+		padding-left:70px;
+		background-size:64px;
+		margin-bottom:5px;
+	}
+	.role_document .bottom {
+		bottom:2px;
+		display:block;
+		width:100%;		
+	}
+	.role_document .options {
+		position:absolute;
+		top:0px;
+		right:0px;
+	}
+	
+	
+	/* Pour les actions */
+	div.checkedimg { color:#AAA; background:url('/images/action-s.png') no-repeat 5px 3px; padding-left:25px; text-decoration: line-through;}
+	div.partcheckedimg { background:url('/images/action-p.png') no-repeat 5px 3px; padding-left:25px;}
+	div.nocheckedimg { background:url('/images/action-n.png') no-repeat 5px 3px; padding-left:25px;}
+	td.project div.checkedimg{ padding-left:48px;}
+	td.project .action-list{font-size:12px; padding-left:2.2em; padding-right:5px; padding-top:5px; padding-bottom:5px; text-indent:-2em;}
+	div.checkedimg input{display:none;}
+	
+	#personneencharge {
+	font-size:smaller;
+	height:18px;
+	padding-top:3px;
+	padding-left:5px;
+	padding-right:4px;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+	}
+	#personneencharge2 {
+	font-size:smaller;
+	height:18px;
+	padding-top:3px;
+	padding-left:5px;
+	padding-right:4px;
+	border-bottom-left-radius:4px;
+	border-top-left-radius:4px;
+	}
+	
+
+	
+	/* Adaptation des zones selon la largeur de l'écran - DDr 17.5.2014*/
+				.omo-text-scrollv {
+				width:100%; max-height:200px; overflow:auto; background-color:#FFFFFF; padding:5px; margin-bottom:10px;
+			    scrollbar-3dlight-color:gold;
+			    scrollbar-arrow-color:blue;
+			    scrollbar-base-color:red;
+			    scrollbar-darkshadow-color:blue;
+			    scrollbar-face-color:red;
+			    scrollbar-highlight-color:yellow;
+			    scrollbar-shadow-color:blue;
+				
+				  -moz-border-radius: 5px;
+		        -webkit-border-radius: 5px;
+		        border-radius: 5px;			
+			}
+			
+			
+			/* Let's get this party started */ 
+			::-webkit-scrollbar { width: 12px; } /* Track */ ::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); -webkit-border-radius: 10px; border-radius: 10px; } /* Handle */ ::-webkit-scrollbar-thumb { -webkit-border-radius: 10px; border-radius: 10px; background: rgba(208,224,235,0.8); -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); } ::-webkit-scrollbar-thumb:window-inactive { background: rgba(208,224,235,0.4); }
+			
+			@media all and (min-width: 1200px)  {
+				.omo-leftcol {height:100%}	
+				.omo-navv {display:none;}
+				.omo-accordion-info {float:right; display:block; }
+			}
+			@media all and (min-width: 800px) and (max-width: 1200px)  {
+
+				.omo-leftcol { width:300px; }	
+				.col1 {float:inherit; width:100%}
+				.omo-tab-label {display:none}
+				.omo-navv {display:none;}
+				.omo-accordion-info {float:inherit; display:block; }
+	
+			}
+			@media all and (max-width: 799px)  {
+				.omo-leftcol {float:inherit; width:100%;overflow:hidden}	
+				.omo-rightcol {float:inherit; width:100%;}	
+				.omo-maindiv {overflow: auto;height:auto; }
+				.omo-accordion-info {float:right; display:block; }
+				
+			}
+			@media all and (max-width: 710px)  {	
+				.col1 {float:inherit; width:100%}
+				.omo-accordion-info {float:inherit; display:block; }
+				.omo-tab-label {display:none}
+				
+			}
+			
+			.omo-logo {background:url('/images/user.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+			.omo-navv{ position:fixed; bottom:0px; right:25px; height:70px;}
+			#omo-btnhaut {width:31px; height:31px; background:url('/images/btn_up_off.png')}
+			#omo-btnhaut:hover {background:url('/images/btn_up_on.png')}
+			#omo-btnbas {width:31px; height:31px; background:url('/images/btn_down_off.png')}
+			#omo-btnbas:hover {background:url('/images/btn_down_on.png')}
+	
+	.menuProjet .buttonProjet{
+	height:14px;width:14px;
+	}
+	
+	.draggable .project_main {cursor:move}
+	.project_main {cursor:hand}
+	.project_description {padding:5px;}
+	
+	/* Format des menus */
+	 .ui-menu { position: absolute; width: 150px; }
+	 .menuProjet {float:right;}
+	 .buttonProjet {height:20px;}
+	 .project_title_header {padding:10px;font-size:12px;text-align:center;}
+	 
+	 .typr_1 div.project_title_header {background:#ade131; border-top-left-radius:6px; 	border-top-right-radius:6px; opacity:0.5;}
+	 .typr_2 div.project_title_header {background:#e85e48; border-top-left-radius:6px; 	border-top-right-radius:6px;opacity:0.5;}
+	 .typr_4 div.project_title_header {background:#6fb6ed; border-top-left-radius:6px; 	border-top-right-radius:6px;opacity:0.5;}
+	 .typr_8 div.project_title_header {background:#dedfdc; border-top-left-radius:6px; 	border-top-right-radius:6px;opacity:0.5;}
+
+	.more_projects {border-radius:6px; margin:4px;}
+	.more_projects a {text-decoration:none; width:100%; box-sizing: border-box; }
+	.more_projects .more_number {border-radius:6px; background:#FFFFFF; padding-left:8px; padding-right:8px; display:inline-block;}
+	.typr_1 .more_projects {background:#ade131;}	 
+	.typr_2 .more_projects {background:#e85e48;}	 
+	.typr_4 .more_projects {background:#6fb6ed;}	 
+	.typr_8 .more_projects {background:#dedfdc;}
+	.archive_image {background-image:url(../images/folder.png) !important; background-position: center center !important; background-repeat: no-repeat !important}	 
+	.archive_count {border-radius:50%; background:#FFFFFF; font-weight:700;padding-left:2px; padding-right:2px;display:inline-block;}
+	/* couleurs des différents status */
+	.typr_1 div.arrondi {border-color:#ade131}
+	.typr_1 #personneencharge, .typr_1 #personneencharge2 {background-color:#ade131}
+	.typr_1 .menuProjet .buttonProjet{background:#ade131;border:1px solid #666;}
+	.typr_1 div.project_main {}
+	.typr_2 div.arrondi {border-color:#F06D6D}
+	.typr_2 .menuProjet .buttonProjet{background:#e85e48;border:1px solid #666;}
+	.typr_2 div.project_main {}
+	.typr_2 #personneencharge, .typr_2 #personneencharge2 {background-color:#e85e48}
+	.typr_4 div.arrondi {border-color:#A4C2F4}
+	.typr_4 div.project_main {background:#e9f2f9; border-top-left-radius:6px; 	border-top-right-radius:6px;}	
+	.typr_4 .menuProjet .buttonProjet{background:#6fb6ed;border:1px solid #333;}
+	.typr_4 #personneencharge, .typr_4 #personneencharge2 {background-color:#6fb6ed}
+	.typr_8 div.arrondi {border-color:#CCCCCC; background:#EEEEEE; color:#999999}
+	.typr_8 div.project_main {}
+	.typr_8 .menuProjet .buttonProjet{background:#dedfdc;border:1px solid #666;}
+	.typr_8 #personneencharge, .typr_8 #personneencharge2 {background-color:#dedfdc}
+	
+	.content{width:100%; margin-right:53px; max-height:200px; padding:7px; font-size:12px;padding-right:7px; overflow:auto; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+	#tabs_gauche .content ul {margin:0;padding-left:0px;padding-right:3px;}
+	ul {margin:0px; }
+	#accordion h3 a{color:#333;}
+	
+	/* Modifications de textes */
+	del{color:#aaa; }ins{font-weight:bold; text-decoration:none}
+	
+	#tabs>ul>li>a, #tabs_gauche>ul>li>a {display:inline-block; min-height:18px}	
+	
+	#test.scroll-to-fixed-fixed table {position:relative; top:-10px;}
+	
+	.omo-reunion {background: url(../../../images/reunion-gouvernance.png) center center no-repeat; width:30px; height:30px; margin-top:3px;}
+	.omo-reunion2 {background: url(../../../images/reunion-gouvernance2.png) center center no-repeat; width:30px; height:30px; margin-top:3px;}
+	

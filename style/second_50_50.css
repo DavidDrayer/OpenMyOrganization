@@ -1,0 +1,20 @@
+@import url("std.css");
+
+.banner {
+    height: 100px;
+	max-height: 30%;
+    width: 100%;
+    background-color:#6c9727;
+}
+	.col3_1 {width:30%; box-sizing:border-box; float:left; margin-left:2%; padding-bottom:20px;}
+	.col3_2 {width:30%;box-sizing:border-box; float:left;margin-right:3%; margin-left:3%; padding-bottom:20px;}
+	.col3_3 {width:30%; box-sizing:border-box;float:left;  padding-bottom:20px;}
+
+	.col2_1 {width:47%; box-sizing:border-box; float:left; margin-left:2%; padding-bottom:20px; }
+	.col2_2 {width:47%;box-sizing:border-box; float:left;margin-right:2%; margin-left:2%; padding-bottom:20px;}
+
+   /* Telephone (640)*/
+    @media (max-width: 640px) {
+		.col3_1, .col3_2, .col3_3 {width:100%; box-sizing:border-box; position:inherit; margin:0px; float:inherit; }
+		.col2_1, .col2_2 {width:100%; box-sizing:border-box; position:inherit; margin:0px; float:inherit; }
+    }

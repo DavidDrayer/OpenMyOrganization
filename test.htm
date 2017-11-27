@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100%;
+}
+body {
+    font-family: arial, sans-serif;
+    margin: 0 auto 0;
+    max-width: 800px;
+    background-color: #bdae78;
+}
+.fix-search {
+    position: fixed;
+    top: 10px;
+    color:#FFFF00;
+    
+  }
+  .onglet {
+	background:#FFFFFF;
+	padding:10px;
+	width:100px;
+}
+.texte { border:1px solid black}
+  #onglet1_anchor, #onglet2_anchor, #onglet3_anchor { display:block;};
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	
+<script>
+	function adjustOnglet() { 
+			h=0;
+			wh=$(window).height()-h;
+			st=$(window).scrollTop();
+			oh1=$("#onglet1").outerHeight();
+			oh2=$("#onglet2").outerHeight();
+			oh3=$("#onglet3").outerHeight();
+			oap1=$("#onglet1_anchor").position().top;
+			oap2=$("#onglet2_anchor").position().top;
+			oap3=$("#onglet3_anchor").position().top;
+			// console.log("Pos anchor: " +$("#onglet1_anchor").position().top+" | Window scroll: "+($(window).scrollTop()+" - Window height: " + $(window).height())+" - Onglet height : " + ($("#onglet1").outerHeight())+" - Onglet anchor height : " + ($("#onglet1_anchor").outerHeight()));
+			if (oap1>st+wh-(oh1)) {
+				$("#onglet1_anchor").css("height",oh1);
+				$("#onglet1").css('position','fixed');
+				$("#onglet1").css('bottom',h+'px');
+			} else {
+				//$("#onglet1_anchor").css("display","none");
+				$("#onglet1_anchor").css("height",0);
+				$("#onglet1").css('position','relative');
+				$("#onglet1").css('bottom','auto');
+			}
+			if (oap2>st+wh-(oh2)) {
+				$("#onglet2_anchor").css("height",oh2);
+				$("#onglet2").css('position','fixed');
+				console.log((wh-oap1)+'px');
+				if (oap1+oh1+$("#onglet1_anchor").outerHeight()-st>wh-oh1-10) {
+					$("#onglet2").css('bottom',(wh+st-oap1-oh1-oh2-$("#onglet1_anchor").outerHeight()-10)+'px');
+				} else {
+					$("#onglet2").css('bottom',h+'px');
+				}
+			} else {
+				$("#onglet2_anchor").css("height",0);
+				$("#onglet2").css('position','relative');
+				$("#onglet2").css('bottom','auto');
+			}
+			if (oap3>st+wh-(oh3)) {
+				$("#onglet3_anchor").css("height",oh3);
+				$("#onglet3").css('position','fixed');
+				console.log((wh-oap2)+'px');
+				if (oap2+oh2+$("#onglet2_anchor").outerHeight()-st>wh-oh2-5) {
+					$("#onglet3").css('bottom',(wh+st-oap2-oh2-oh3-$("#onglet2_anchor").outerHeight()-5)+'px');
+				} else {
+					$("#onglet3").css('bottom',h+'px');
+				}
+			} else {
+				$("#onglet3_anchor").css("height",0);
+				$("#onglet3").css('position','relative');
+				$("#onglet3").css('bottom','auto');
+			}
+
+		}
+	
+	$(document).ready(function() {
+
+		$(window).resize(function () {
+			adjustOnglet();
+		});
+		$(window).scroll(function () {
+			adjustOnglet();
+		});
+		adjustOnglet();
+	});
+
+</script>
+</head>
+<body>
+
+<div class='texte'>
+<h1>Sit amet justo</h1>
+
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+</div>
+<a name='onglet1_anchor' id='onglet1_anchor'></a>
+<div id='onglet1' class='onglet'>Onglet1</div>
+<div class='texte'>
+<h1>Sit amet justo</h1>
+
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+</div>
+<a name='onglet2_anchor' id='onglet2_anchor'></a>
+<div id='onglet2' class='onglet'>Onglet2</div>
+<div class='texte'>
+<h1>Sit amet justo</h1>
+
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+</div>
+<a name='onglet3_anchor' id='onglet3_anchor'></a>
+<div id='onglet3' class='onglet'>Onglet3</div>
+<div class='texte'>
+<h1>Sit amet justo</h1>
+
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+<p>Leo sed sed pulvinar et magna id eget condimentum laborum vel suspendisse. Porttitor mattis aenean. Accumsan sed adipiscing. Amet penatibus rutrum vitae vehicula viverra afdfsdfdsfmet nibh semper nunc libero tincidunt massa vitae sagittis urna consectetuer magna a diam parturient. Nec nec dolor. Venenatis purus quis. In turpis in. Officiis hic mauris lorem wisi maecenas.
+Velit sed eget donec placerat vestibulum</p>
+
+<p>Orci id gravida per neque nibh. Nullam sit commodo tincidunt et diam vitae pharetra sed. Tempus sit sodales. Voluptatem wisi mattis inceptos tellus dolor rhoncus sed et eu turpis torquent ligula eu dui lorem nec accumsan platea lacinia ac. Non faucibus per sit in vehicula magna lacus deleniti. Tincidunt per aliquam. Vestibulum adipiscing laoreet eget eros commodo. Laoreet molestie a eros in nec sed justo venenatis. Eu lorem gravida. Nisl non a sociis convallis leo. Est nunc nisl porta dignissim turpis. Sapien sed</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@import url("jquery-ui-1.10.4.custom.css");
+@import url("std.css");
+
+#nav_select {
+	padding:2px;
+	border-radius:5px;
+	font-size:smaller;
+}
+
+/* Contenu d'un accordion */
+.grey_design .ui-widget-content {
+	border: 1px solid #CFCFCF;
+	background: #ffffff ;
+}
+/* Accordéon au repos */
+.omo-cols .grey_design  .ui-state-default,
+.omo-cols .grey_design .ui-widget-content .ui-state-default,
+.omo-cols .grey_design .ui-widget-header .ui-state-default {
+	border: 1px solid #CFCFCF;
+	background: #FEFEFE;
+}
+/* Lorsque curseur dessus */
+.omo-cols .grey_design .ui-state-hover,
+.omo-cols .grey_design .ui-widget-content .ui-state-hover,
+.omo-cols .grey_design .ui-widget-header .ui-state-hover,
+.omo-cols .grey_design .ui-state-focus,
+.omo-cols .grey_design .ui-widget-content .ui-state-focus,
+.omo-cols .grey_design .ui-widget-header .ui-state-focus {
+	border: 1px solid #CFCFCF;
+	background: #ffe67c url(images/ui-bg_flat_75_ffe67c_40x100.png) 50% 50% repeat-x;
+
+}
+/* accordéon ouvert */
+.omo-cols .grey_design.ui-state-active,
+.omo-cols .grey_design.ui-widget-content .ui-state-active,
+.omo-rightcol .grey_design .ui-state-active {
+	border: 1px solid #CFCFCF;
+	background-color: rgba(174, 196, 216, 0.5);
+	background-image:none;
+}
+
+.omo-rightcol .ui-state-active{
+
+}
+
+/* Light design */
+/* Contenu d'un accordion */
+.light  .ui-widget-content:not(.ui-button) {
+	border: 0px solid #CFCFCF;
+	border-bottom:1px solid #eee;
+	background: #ffffff ;
+}
+/* Accordéon au repos */
+.omo-cols .light  .ui-state-default:not(.ui-button),
+.omo-cols .light  .ui-widget-content .ui-state-default:not(.ui-button),
+.omo-cols .light  .ui-widget-header .ui-state-default:not(.ui-button) {
+	border: 0px solid #CFCFCF;
+	border-bottom:1px solid #CFCFCF;
+	background: #FEFEFE;
+}
+/* Lorsque curseur dessus */
+ .light  .ui-state-hover:not(.ui-button),
+.light   .ui-widget-content .ui-state-hover:not(.ui-button),
+ .light  .ui-widget-header .ui-state-hover:not(.ui-button)
+ {
+	background: #ffe67c url(images/ui-bg_flat_75_ffe67c_40x100.png) 50% 50% repeat-x;
+
+}
+/* accordéon ouvert */
+ .light  .ui-state-active:not(.ui-button),
+ .light  .ui-widget-content .ui-state-active:not(.ui-button),
+ .light  .ui-state-active:not(.ui-button) {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+/* DDr - Pas de boutons pour fermer les dialogue autres que les boutons prévus à cet effet */
+.noclose .ui-dialog-titlebar-close{
+    display: none;
+}
+
+.ui-tabs-anchor {height:27px; }
+.ui-datepicker, .ui-timepicker {background: rgba(215, 227, 238, 1);}
+
+.cadre h3 a {text-decoration:none; color:#000;font-size:15px;}
+a:not(.ui-tabs-anchor) {padding:3px; display:inline-block }
+a:hover:not(.ui-tabs-anchor) {background-color:rgba(0, 0, 0, 0.2);border-radius:5px;}
+a.omo-user-img {display:inline; float:left; margin-right:5px;}
+
+a.omo-org-visitor, div.omo-org-visitor {background:url('../../../images/icon_org_visitor.png') 7px 7px no-repeat; min-height:60px;padding:5px; padding-left:80px; display:block;text-decoration:none; }
+a.omo-org-member {background:url('../../../images/icon_org_member.png') 7px 7px  no-repeat; min-height:60px;padding:5px; padding-left:80px; display:block;text-decoration:none; }
+a.omo-org-admin {background:url('../../../images/icon_org_admin.png') 7px 7px  no-repeat; min-height:60px;padding:5px; padding-left:80px; display:block;text-decoration:none; }
+a.omo-org-visitor h3, div.omo-org-visitor h3, .omo-org-member h3, .omo-org-admin h3, .cadre h3 {margin:0px;font-size:20px;}
+
+#map_onglet {background:url('../images/cercles.png') center center no-repeat #FFFFFF}
+
+#omo-org-picture img {margin:2px; border:2px solid black;}
+
+  .ui-tooltip {
+  	background: white;
+    
+  }
+  
+  	.omo-bug-1 {background:url('../images/bug_1.jpg') center center no-repeat}
+  	.omo-bug-2 {background:url('../images/bug_2.jpg') center center no-repeat}
+  	.omo-bug-3 {background:url('../images/bug_3.jpg') center center no-repeat}
+  	.omo-bug-4 {background:url('../images/bug_4.jpg') center center no-repeat}
+  	.omo-bug-5 {background:url('../images/bug_5.jpg') center center no-repeat}
+
+  .omo-calendrier {border:2px solid rgb(98, 124, 146); text-align:center; border-radius:5px; width:65px;background:rgba(255, 255, 255, 0.7); margin-right:10px;}
+   .omo-date-mois {background:rgb(98, 124, 146); color:#FFFFFF; text-transform: uppercase;font-weight:bold;text-shadow: 1px 1px rgb(0,0,0);}
+   .omo-date-nojour {font-size:30px; text-shadow: 0px 0px 3px rgb(255,255,255);}
+  .omo-date-jour {text-transform: lowercase;font-weight:bold;}
+  
+  	/* Formulaire gouvernance, utilisé à plusieurs endroits */
+.omo-project-action {padding:5px; padding-left:120px;background:url('../images/icon_projet.png') 5px 5px no-repeat #DDDDDD; min-height:80px }
+.omo-action-action { padding:5px; padding-left:120px;background:url('../images/icon_action.png') 5px 5px no-repeat #DDDDDD; min-height:80px }
+.omo-circle-action {padding:5px; padding-left:120px;background:url('../images/icon_cercle.png') 5px 5px no-repeat #DDDDDD; min-height:80px }
+.omo-role-action { padding:5px; padding-left:120px;background:url('../images/icon_role.png') 5px 5px no-repeat #DDDDDD; min-height:80px }
+.omo-policy-action {padding:5px; padding-left:120px;background:url('../images/icon_politique.png') 5px 5px no-repeat #DDDDDD; min-height:80px }
+div.notif {border:1px solid red; background:#FFAAAA;border-radius: 50%;min-width:15px; position:absolute; left:15px;top:1px;}
+
+.omo_legende_onglet {position: absolute;
+    right: 0px;max-width:190px;text-overflow:ellipsis; overflow:hidden;}
+.myplaceholder {border: 2px dashed lightgrey; min-height:60px;}
+
+.omo-project-visibility1 { font-weight:bold; color:#777777; margin-top:2px; min-height:16px; float:right; background:url('../images/visibility_1.png') 0px 0px no-repeat; padding-right:18px; opacity:0.5}
+.omo-project-visibility2 { font-weight:bold; color:#777777; margin-top:2px; min-height:16px; float:right; background:url('../images/visibility_2.png') 0px 0px no-repeat; padding-right:18px; opacity:0.5}
+.omo-project-visibility3 { font-weight:bold; color:#777777; margin-top:2px; min-height:16px; float:right; background:url('../images/visibility_3.png') 0px 0px no-repeat; padding-right:18px; opacity:0.5}
+.omo-project-visibility4 { font-weight:bold; color:#777777; margin-top:2px; min-height:16px; float:right; background:url('../images/visibility_4.png') 0px 0px no-repeat; padding-right:18px; opacity:0.5}
+.omo-project-visibility5 { font-weight:bold; color:#777777; margin-top:2px; min-height:16px; float:right; background:url('../images/visibility_5.png') 0px 0px no-repeat; padding-right:18px; opacity:0.5}
+.omo-project-visibility5:hover,.omo-project-visibility4:hover,.omo-project-visibility3:hover,.omo-project-visibility2:hover,.omo-project-visibility1:hover {opacity:1}
+
+.omo-project-important1 { font-weight:bold; color:#777777; margin-top:1px; min-height:16px; float:left; background:url('../images/projet_star1.png') 0px 0px no-repeat; padding-left:16px}
+.omo-project-important2 { font-weight:bold; color:#777777; margin-top:1px; min-height:16px; float:left; background:url('../images/projet_star2.png') 0px 0px no-repeat; padding-left:16px}
+.omo-project-important3 { font-weight:bold; color:#777777; margin-top:1px; min-height:16px; float:left; background:url('../images/projet_star3.png') 0px 0px no-repeat; padding-left:16px}
+.omo-project-important3:hover, .omo-project-important2:hover , .omo-project-important1:hover {background:url('../images/projet_star1.png') 0px 0px no-repeat; cursor:pointer;}
+.omo-projet-status {font-size:smaller; color:#777777; padding-left:2px;}
+
+.omo-btn {display: inline-block; text-align: center; vertical-align: middle;   height:20px; padding:6 4 1 4px ;   border-radius:5px; margin:2px; background-color:#dddddd}
+.omo-new-btn {background:url('../images/nouveau.png') 6px center no-repeat #dddddd; padding-left:25px;}
+.omo-edit-btn { background:url('../images/edit.png') 6px center no-repeat #dddddd; padding-left:25px;}
+.omo-delete-btn { background:url('../images/delete.png') 6px center no-repeat #dddddd; padding-left:25px;}
+.omo-btn:hover {background-color:#ffcc00}
+.omo-btn-container.omo-right .omo-btn {float: right; display:table-cell; vertical-align:center}
+.omo-btn-container.omo-right {clear:both;}

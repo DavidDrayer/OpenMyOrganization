@@ -1,0 +1,15 @@
+
+# Contact info submission
+
+url: makadam.ch/
+site_owner: David Dräyer
+address1: rue du Collège 11
+address2: 
+city: Nyon
+state: 
+country: Switzerland
+postal_code: 1260
+phone_number: 
+display_email: info@makadam.ch
+site_name: Makadam
+site_description: Trio spécialisé dans le jonglage du feu. Présente le CV des trois artistes, leur spectacle et leurs représentations.

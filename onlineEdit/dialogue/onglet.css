@@ -1,0 +1,231 @@
+@media screen, print {
+
+
+BODY, TD, TH{
+	font-family:  Arial;
+	font-size: 12px;
+}
+BODY{
+	margin : 5px;
+}
+
+/* contenu d'un choix à onlets (scroll ou liste définie) */
+.sousListe {
+	height:300; 
+	OVERFLOW:auto;
+}
+
+/* boîte d'info pour les fiches signalétiques */
+.menu, .menuMinimize {
+	width:100%;
+	border: 1px solid #5555A9;
+}
+
+
+/* Layout général de la page */
+.layout {
+	width:640px;
+}
+
+/* Style d'un tableau dans une fiche signalétique */
+TABLE.menu {
+	border-collapse: collapse;
+}
+
+/* Cellule d'un tableau de fiche signalétique */
+TABLE.menu TD {
+	background-color:#FFFFFF;
+	padding:5px;
+	border: 1px solid #5555A9;
+}
+
+/* Entête de ligne ou de colonne dans un tableau de fiche signalétique */
+TABLE.menu TH {
+	background-color:  #7878D9;
+	padding:5px;
+	border: 1px solid #5555A9;
+	color:#FFFFFF;
+}
+/* Entête dans une liste*/
+.listeHeader {
+	background-color:#DDDDDD;
+	padding:5px;
+	width: 100%;
+}
+/* contenu d'une boîte d'information, avec une petite marge */
+.menuContent {
+	padding:5px;
+	overflow:auto;
+	width:100%;
+}
+.titre {
+	font-weight:bold;
+	font-size:14px;
+	border-bottom: 2px solid #BBBBBB;
+	margin-bottom:15px;
+}
+.label {
+	font-weight:bold;
+	margin-top:5px;
+}
+ul {
+margin-top:0px;
+}
+
+/* titre d'une boîte d'info ou d'un système à onglets */
+.menuTitle, TABLE.menu TD.menuTitle {
+	background-color: #FDEC34;
+	font-weight: bold;
+	padding:0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #5555A9;
+}
+
+/* Entête du système à onglets, avec choix des menus */
+.menuHeader {
+	color: #5555A9;
+	position:absolute;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/* Entête du système à onglets, avec choix des menus */
+.menuHeader a{
+	color: #FFFFFF;
+	width:115px;
+	display: inline-block;
+	text-align:center;
+}
+
+.menuSubTitle {
+	background-color: #CCCCCC;
+	padding: 4px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #5555A9;
+}
+
+/* position des onglets dans les systèmes à onglets */
+.onglet {
+	padding-top:3px;
+	padding-bottom:4px;
+	position:relative;
+	width:115px;
+	background-color:6B6BD2;
+	background-image: url(images/bkg/onglet.gif);
+	font-weight: bold;
+	text-align: center;
+}
+
+A {
+	color: #d8591b;
+	font-weight : bold;
+	text-decoration:none;
+}
+
+A:hover {
+	color:red;
+}
+
+BODY {
+	color: #000000;
+}
+/* texte en gris */
+.standby {  
+	color: #999999; 
+	font-weight: normal
+}
+.tableTitle {
+	background-color:#ABBDDC;
+	padding:3px;
+	font-weight:bold;
+}
+
+}
+@media screen {
+	.editTools {
+		position:absolute;
+		top:40px;
+		height:200px;
+		left:-10px;
+		padding:5px;
+		padding-left:20px;
+		background:#EEEEEE;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color="#555555", Direction=135, Strength=3); 
+	}
+	.tableMinimize {
+		height:20px;
+		overflow:hidden;
+	}
+	.yellow {
+		background-image: url(images/bkg/jauneTrame.gif);
+		border-width:2px;
+		border-style:solid;
+		padding: 3px;
+		border-bottom-color:#D0BE00;
+		border-right-color:#D0BE00;
+		border-top-color:#FFFFFF;
+		border-left-color:#FFFF99;
+	}
+	.ongletContenuCache {
+		display:none
+	}
+	
+	.nePasAfficher {
+		display:none;
+	}
+	
+	/* contenu d'un onglet */
+	.ongletContent {
+		background-color:#FFFFFF;
+		padding:5px;
+		border-color:#6B6BD2;
+		border-width:2px;
+		border-style:solid;
+	}
+	.ongletLegende {
+		background-color: #6B6BD2;
+		color:#FFFFFF;
+		padding:4px;
+		font-weight:bold;
+	}
+	.menuMinimize {
+		height:26px;
+		overflow: hidden;
+	}	
+}
+
+
+@media print {
+	.menuMinimize, .tableMinimize, .nePasAfficher, .editTools {
+		display:none;
+	}
+	.ongletLegende {
+		padding:4px;
+		margin-top:15px;
+		font-size: 16px;
+		font-weight:bold;
+		text-decoration:underline;
+	}
+	.ongletLegende IMG, .menuTitle IMG, .tableTitle IMG {
+		display:none;
+	}
+
+	.menuHeader, .onglet { 
+		display:none;
+	}
+	/* contenu d'un onglet */
+	.ongletContent {
+		padding:5px;
+		width:100%;
+		overflow:hidden;
+	}
+	BODY {
+		background-color:#FFFFFF;
+	}
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}

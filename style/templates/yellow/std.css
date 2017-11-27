@@ -1,0 +1,72 @@
+	/* Document global */
+	html, .main,
+	body {height: 100%;padding:0px; margin:0px;}
+	form {display: inline}
+	
+	body, table {font-size:12px; font-family: "Verdana","Arial","sans-serif"; }
+	td {vertical-align:top; text-align:left}
+	p {padding:0px; margin-bottom:3px; margin-top:3px}
+	
+	/* Mise en page de la zone principale */
+	div.main {text-align: center; }
+	table.omo-main-table {margin : 0px auto auto auto; padding:0px; width:1280px; padding-top:85px;}
+	/* Navigation principale */
+	div.mainNav { position:absolute; z-index:5; top:0px; left:0px; width:100%; text-align:left; background:#F9C536}
+	div.mainNav div.title {background:#FFFFFF}
+	.mainNav table {padding:0px; margin:0px; border:0px;}
+	.mainNav .nav_title {font-size:200%; text-transform:uppercase;}
+	.treeNav td {vertical-align:bottom;  padding-top:1px; padding-right:20px; padding-left:15px; font-weight:bold;}
+	h1 {border-bottom:4px solid #DDDDDD}
+
+	.mainNav td.nav_std, .mainNav td.nav_home {background:url('../images/navcircle.png') no-repeat right top; padding-bottom:4px;}
+	.mainNav td.nav_home { background:#FFFFFF url('../images/navcircle_first.png') no-repeat right top;}
+	.mainNav td.nav_home a{color:#AAAAAA}
+	
+	/* Zone d'affichages */
+	fieldset {background:#F9FDE4; border:1px solid #CFCFCF; padding:10px;margin-bottom:10px;}
+	legend {font-weight:bold;color:#576704; background:#FFFFFF; border-left:1px solid #CFCFCF;border-right:1px solid #CFCFCF;border-bottom:1px solid #CFCFCF; padding:5px; padding-left:10px; padding-right:10px;position:relative;}
+	#mask1 {position: absolute; top:0px; left:-1px; width:1px; height: 50%; background-color:#FFFFFF;}
+	#mask2 {position: absolute; top:0px; right:-1px; width:1px; height: 50%; background-color:#FFFFFF;}
+	fieldset.light {background:#FAFAFA; margin-bottom:0px;}
+	.light legend {color:#000000}
+	.login {position:absolute; top:-3px; right:10px; text-align:right;	padding:5px; padding-top:9px; 
+	-moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background:#CCCCCC; border:1px solid #AAAAAA;} 
+        
+    form {display:inline;}
+	input, select {padding:5px; border:1px solid #AAAAAA; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	li + li {margin-top:5px;}
+	hr {border: 0;    height: 1px;    background: #aaa;}
+	.omo-role-1, .omo-role {background:url('../images/role.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-role-2 {background:url('../images/leadlink.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-role-4 {background:url('../images/replink.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-role-8 {background:url('../images/circle.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-role-16 {background:url('../images/circle.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-role-32, .omo-circle {background:url('../images/circle.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	
+	.omo-user {background:url('../images/user.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-purpose {background:url('../images/purpose.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-structural {background:url('../images/structural.png') left 50% no-repeat; padding-left:28px; min-height:18px; display:inline-block;}
+	.omo-strategy {background:url('../images/strategy.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-metrics {background:url('../images/metrics.png') left 50% no-repeat; padding-left:23px; min-height:18px; display:inline-block;}
+	.omo-checklist {background:url('../images/checklist.png') left 50% no-repeat; padding-left:18px; min-height:18px; display:inline-block;}
+	
+	.omo-accordion-info {white-space:nowrap;}
+	
+	.omo-user-block {background:#DDDDDD; padding:8px; min-height: 35px; min-width:200px;}
+	.omo-user-block .omo-user-img { float:left; margin-right:10px; border:1px solid black}
+	
+	.omo-box {border:1px solid #CCCCCC; padding:15px 23px 15px 23px;}
+	.omo-label-fields {display:inline-block; min-width:100px; font-weight:bold; color:#576704; padding-right:20px;}
+	.omo-label-accordion {font-weight:bold;}
+	.omo-label-text {display:inline-block; min-width:100px; text-align:right; font-weight:bold; color:#576704; padding-right:20px;}
+	.omo-value {font-weight:bold;}
+	.omo-field input {width:90%}
+	.omo-signature {font-size:70%; text-align:right; color:#999999; font-style:italic}
+	
+	.omo-help {background: url('../images/btn_help_light.png') left top no-repeat;  margin-left:10px;width:21px; height:18px; display:inline-block; text-decoration:none}
+	.omo-help:hover {background: url('../images/btn_help.png')}
+
+	.omo-delete {float:right; background: url('../images/delete.png') left top no-repeat;  margin-left:5px;width:21px; height:18px;text-decoration:none}

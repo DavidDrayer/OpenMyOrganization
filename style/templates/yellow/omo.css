@@ -1,0 +1,63 @@
+@import url("std.css");
+@import url("jquery-ui-1.10.4.custom.css");
+
+/* Contenu d'un accordion */
+.grey_design .ui-widget-content {
+	border: 1px solid #CFCFCF;
+	background: #ffffff ;
+}
+/* Accordéon au repos */
+.grey_design  .ui-state-default,
+.grey_design .ui-widget-content .ui-state-default,
+.grey_design .ui-widget-header .ui-state-default {
+	border: 1px solid #CFCFCF;
+	background: #FEFEFE;
+}
+/* Lorsque curseur dessus */
+.grey_design .ui-state-hover,
+.grey_design .ui-widget-content .ui-state-hover,
+.grey_design .ui-widget-header .ui-state-hover,
+.grey_design .ui-state-focus,
+.grey_design .ui-widget-content .ui-state-focus,
+.grey_design .ui-widget-header .ui-state-focus {
+	border: 1px solid #CFCFCF;
+	background: #E9F997;
+
+}
+/* accordéon ouvert */
+.grey_design.ui-state-active,
+.grey_design.ui-widget-content .ui-state-active,
+.grey_design .ui-state-active {
+	border: 1px solid #CFCFCF;
+	background: #EEEEEE;
+}
+
+/* Light design */
+/* Contenu d'un accordion */
+.light  .ui-widget-content:not(.ui-button) {
+	border: 0px solid #CFCFCF;
+	border-bottom:1px solid #CFCFCF;
+	background: #ffffff ;
+}
+/* Accordéon au repos */
+ .light  .ui-state-default:not(.ui-button),
+ .light  .ui-widget-content .ui-state-default:not(.ui-button),
+ .light  .ui-widget-header .ui-state-default:not(.ui-button) {
+	border: 0px solid #CFCFCF;
+	border-bottom:1px solid #CFCFCF;
+	background: #FEFEFE;
+}
+/* Lorsque curseur dessus */
+ .light  .ui-state-hover:not(.ui-button),
+.light   .ui-widget-content .ui-state-hover:not(.ui-button),
+ .light  .ui-widget-header .ui-state-hover:not(.ui-button)
+ {
+	background: #E9F997;
+
+}
+/* accordéon ouvert */
+ .light  .ui-state-active:not(.ui-button),
+ .light  .ui-widget-content .ui-state-active:not(.ui-button),
+ .light  .ui-state-active:not(.ui-button) {
+	border-bottom: 1px solid #EEEEEE;
+}
